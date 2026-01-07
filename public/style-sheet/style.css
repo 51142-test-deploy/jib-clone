@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'prompt';
+    src: url(../assent/font/Prompt-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #2c3d92;
+}
+
+body {
+    font-family: 'prompt', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 20px;
+}
+.logo .add {
+    height: 50px;
+}
+nav .content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .input-group {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    margin-left: 4rem;
+    width: 80%;
+}
+
+.search-bar{
+    height: 100%;
+    width: 70%;
+}
+
+.find {
+    width: 8%;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 8px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow:#00c8ff 0 0 7px;
+}
+
+
+.find .search-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.search-icon button {
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+}
+
+.menu > * {
+    margin-left: 20px;
+}
+
+.cart {
+    padding-right: 15px;
+    position: relative;
+    border-right: orangered 4px solid;
+    cursor: pointer;
+}
+
+.acc {
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 15px;
+}
+
+.switch-lang > * {
+    margin: 0 2.5px 0 2.5px;
+    padding: 0 2.5px 0 2.5px;
+}
+
+.advice-1 ,
+.advice-2 ,
+.advice-3 ,
+.advice-4 {
+    max-width: auto;
+    overflow: hidden;
+}
+
+.advice-1 img,
+.advice-2 img,
+.advice-3 img,
+.advice-4 img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.advice-1 img:hover,
+.advice-2 img:hover,
+.advice-3 img:hover,
+.advice-4 img:hover{
+    transform: scale(1.1);
+}
+
+.ad {
+    display: grid;
+    justify-items: center;
+    margin: 20px 0 20px 0;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px #ddd;
+    height: auto;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.item header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.item-list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.item1 {
+    width: auto;
+    height: auto; 
+    border: solid 1px #ddd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 .photo {
+    height: 300px;
+    overflow: hidden;
+}
+
+.item1 .photo img {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item1 .photo img:hover {
+    transform: scale(1.1);
+}
+.add-to-Cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+}
+
+.add-to-Cart button {
+    display: flex;
+    text-align: center;
+    background-color: #C9302C;
+    color: white;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-Cart button:hover {
+    background-color: rgb(241, 56, 52);;
+}
+
