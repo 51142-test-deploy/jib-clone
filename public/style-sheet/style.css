@@ -448,18 +448,6 @@ main {
     transform: translateY(0);
 }
 
-/* Responsiveness */
-@media (max-width: 992px) {
-    .main-content {
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .left,
-    .right {
-        width: 100%;
-    }
-}
 
 .acc-container {
     width: 85%;
