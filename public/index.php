@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../app/config/index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style-sheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 
 <body>
@@ -27,10 +31,10 @@
             </div>
             <div class="menu">
                 <div class="cart">
-                    <h2><a href="Cart.html">ตระกร้าสินค้า</a></h2>
+                    <h2><a href="./Cart.php">ตระกร้าสินค้า</a></h2>
                 </div>
                 <div class="acc">
-                    <h2><a href="acc.html">บัญชีของฉัน</a></h2>
+                    <h2><a href="./acc.php">บัญชีของฉัน</a></h2>
                 </div>
                 <div class="switch-lang">
                     <div class="th">🇹🇭</div>
@@ -42,10 +46,11 @@
     <main>
         <section class="item">
             <header>
-                <h2>Lorem ipsum dolor</h2>
+                <h2>สินค้าแนะนำ</h2>
             </header>
             <div class="item-list">
-                <div class="item1">
+                <?php $itemController->ShowRecommendedItems() ?>
+                <!-- <div class="item1">
                     <div class="photo">
                         <img src="https://www.jib.co.th/img_master/product/medium/20260107165203_82786_447_1.jpg?v=827861767779524"
                             alt="">
@@ -156,7 +161,7 @@
                     <div class="add-to-Cart" onclick="addToCart()">
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="ad">
@@ -182,7 +187,8 @@
                 <h2>สินค้าใหม่</h2>
             </header>
             <div class="item-slide">
-                <div class="item2">
+                <?php $itemController->ShowNewItems() ?>
+                <!-- <div class="item2">
                     <div class="photo">
                         <img src="https://www.jib.co.th/img_master/product/medium/2025122909201582695_1.jpg?v=826951766975992"
                             alt="">
@@ -251,7 +257,7 @@
                     <div class="add-to-Cart" onclick="addToCart()">
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="ad">
@@ -277,7 +283,8 @@
                 <h2>สินค้าขายดี</h2>
             </header>
             <div class="item-slide">
-                <div class="item2">
+                <?php $itemController->ShowHotItems() ?>
+                <!-- <div class="item2">
                     <div class="photo">
                         <img src="https://www.jib.co.th/img_master/product/medium/2026010609524682773_1.jpg?v=827731767686594"
                             alt="">
@@ -346,11 +353,11 @@
                     <div class="add-to-Cart" onclick="addToCart()">
                         <button>Add to Cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
